@@ -14,6 +14,11 @@ nav {
     width: 1728px;
     height: 127px;
     flex-shrink: 0;
+    position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 0;
+         
 }
 
 ul {
@@ -45,7 +50,8 @@ li {
     font-size: 61.43px;
     font-style: normal;
     font-weight: 700;
-    line-height: normal;   
+    line-height: normal; 
+    z-index: 1;  
 }
 .navbar-search {
     margin-right: 20px;
@@ -85,6 +91,7 @@ padding-left: 25px;
 .menu-icon {
     font-size: 100px;
     cursor: pointer;
+    color:white;
 }
 .top-left-image{
     width: 456px;
@@ -93,7 +100,7 @@ padding-left: 25px;
     border-radius: 20px;
     background: url(image\ 4.png), lightgray 50% / cover no-repeat;
     margin-top: 289px;
-    margin-left: 89px;
+    margin-left: 79px;
 }
 
 .top-right-box-matter{
@@ -130,7 +137,7 @@ line-height: 178.7%; /* 51.823px */
 }
 
 
-.social-icons {
+/*.social-icons {
     display: flex;
     flex-direction: column;
     align-items: center;  
@@ -146,6 +153,8 @@ line-height: 178.7%; /* 51.823px */
     flex-shrink: 0;
     margin-bottom:10px; 
     margin-left: 28px;
+    position:sticky;
+    top:20px;
    
 }
 
@@ -165,6 +174,30 @@ line-height: 178.7%; /* 51.823px */
     height: 58.612px;
     flex-shrink: 0;
     margin: 10px;
+}*/
+.frame{
+    
+/*float:right;
+  height:360px;*/
+  /*float: right;*/
+  position:sticky;
+  
+  z-index:-1;
+  
+  
+  
+
+  
+}
+.icon1{
+   
+    margin-top: 10px;
+    
+    
+
+
+    
+    
 }
 
 .second-row {
@@ -229,11 +262,12 @@ padding: 20px;
 }
 
 .mic{
-    position: absolute;
+    position: fixed;
         width: 140px; 
         height: 140px;
-        top: 170.9%;
-        left: 109.3%;
+        bottom: 20px;
+        right : 50px;
+        z-index: 1;
  }
 
  .bottom-box{
@@ -353,8 +387,9 @@ button{
     border-radius: 9px;
     
     position:absolute;
-    top: 290%;
-    left: 98%;
+    top: 240%;
+    left: 88%;
+    
 }
 .next{
 font-size: 35px;
